@@ -10,8 +10,61 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 canvas{
     background-color: white;
+}
+
+.principal-box{
+    display: flex;
+}
+
+.paint-box{
+    background-color: rgb(182, 105, 17);
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colors-box{
+    background-color: white;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.red, .orange, .yellow, .green, .blue, .violet{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+}
+
+/* Colores */
+.red{
+    background-color: #ff0000;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.violet{
+    background-color: violet;
 }

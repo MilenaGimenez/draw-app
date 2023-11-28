@@ -2,9 +2,19 @@
 const mainCanvas = document.getElementById("main-canvas");
 const context = mainCanvas.getContext("2d");
 
+//Colores
+const red = document.getElementsByClassName("red");
+
 //Agarrar coordenadas del mouse y dibujar cuando este el click pulsado
 let initialX;
 let initialY;
+
+//Capturar color
+const capturarColor = () => {
+    red.addEventListener("click", () => {
+        context.strokeStyle = "#ff0000";
+    });    
+};
 
 //Función para dibujar
 const dibujar = (cursorX, cursorY) => {
