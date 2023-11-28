@@ -3,26 +3,27 @@ const mainCanvas = document.getElementById("main-canvas");
 const context = mainCanvas.getContext("2d");
 
 //Colores
-const red = document.getElementById("red");
+const red = document.getElementById("red"); 
+const orange = document.getElementById("orange"); 
 
 //Agarrar coordenadas del mouse y dibujar cuando este el click pulsado
 let initialX;
 let initialY;
 
 let colorPincel = context.strokeStyle = "#000";
+let colorRojo = "#ff0000";
+let colorNaranja = "#ffa500";
 
 
 red.addEventListener("click", () => {
-    colorPincel = context.strokeStyle = "#ff0000";
-    console.log("hice click en el rojo")
-        
+    colorPincel = context.strokeStyle = colorRojo;
+    console.log("hice click en un color")        
+});  
+
+orange.addEventListener("click", () => {
+    colorPincel = context.strokeStyle = colorNaranja;
+    console.log("hice click en un color")        
 });   
-
-
-//Capturar color
-// const capturarColor = () => {
-//     context.strokeStyle = "#000";    
-// };
 
 //Función para dibujar
 const dibujar = (cursorX, cursorY) => {
