@@ -30,15 +30,23 @@ canvas{
     flex-direction: column;
 }
 
-.colors-box{
+.colors-box, .herr-box{
     background-color: white;
     width: 7rem;
     height: 7rem;
     display: flex;
     flex-wrap: wrap;
+    margin: 10px;
 }
 
-.red, .orange, .yellow, .green, .blue, .violet{
+.goma{
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+}
+
+
+.red, .orange, .yellow, .green, .blue, .violet, .brown, .black{
     border: 1px solid black;
     width: 20px;
     height: 20px;
@@ -59,13 +67,21 @@ canvas{
 }
 
 .green{
-    background-color: green;
+    background-color: #008000;
 }
 
 .blue{
-    background-color: blue;
+    background-color: #0000ff;
 }
 
 .violet{
-    background-color: violet;
+    background-color: #ee82ee;
+}
+
+.brown{
+    background-color: #a54d2a;
+}
+
+.black{
+    background-color: #000000;
 }

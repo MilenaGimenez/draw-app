@@ -6,6 +6,14 @@ const context = mainCanvas.getContext("2d");
 const red = document.getElementById("red"); 
 const orange = document.getElementById("orange"); 
 const yellow = document.getElementById("yellow"); 
+const green = document.getElementById("green"); 
+const blue = document.getElementById("blue"); 
+const violet = document.getElementById("violet"); 
+const brown = document.getElementById("brown"); 
+const black = document.getElementById("black"); 
+
+//Herramientas
+const goma = document.getElementById("goma");
 
 //Agarrar coordenadas del mouse y dibujar cuando este el click pulsado
 let initialX;
@@ -22,6 +30,13 @@ let colorPincel = context.strokeStyle = "#000";
 let colorRojo = "#ff0000";
 let colorNaranja = "#ffa500";
 let colorAmarillo = "#ffff00";
+let colorVerde = "#008000";
+let colorAzul = "#0000ff";
+let colorVioleta = "#ee82ee";
+let colorBrown = "#a54d2a";
+let colorBlack = "#000000";
+let colorGoma = "white";
+
 
 const listaDeColores = [colorRojo, colorNaranja, colorAmarillo]
 
@@ -37,6 +52,8 @@ const listaDeColores = [colorRojo, colorNaranja, colorAmarillo]
 //     }
 // };
 
+//Agregando evento a los colores
+
 red.addEventListener("click", () => {
     colorPincel = context.strokeStyle = colorRojo;
     console.log("hice click en un color")        
@@ -49,6 +66,36 @@ orange.addEventListener("click", () => {
 
 yellow.addEventListener("click", () => {
     colorPincel = context.strokeStyle = colorAmarillo;
+    console.log("hice click en un color")        
+});   
+
+green.addEventListener("click", () => {
+    colorPincel = context.strokeStyle = colorVerde;
+    console.log("hice click en un color")        
+});   
+
+blue.addEventListener("click", () => {
+    colorPincel = context.strokeStyle = colorAzul;
+    console.log("hice click en un color")        
+});   
+
+violet.addEventListener("click", () => {
+    colorPincel = context.strokeStyle = colorVioleta;
+    console.log("hice click en un color")        
+});   
+
+brown.addEventListener("click", () => {
+    colorPincel = context.strokeStyle = colorBrown;
+    console.log("hice click en un color")        
+});   
+
+black.addEventListener("click", () => {
+    colorPincel = context.strokeStyle = colorBlack;
+    console.log("hice click en un color")        
+});  
+
+goma.addEventListener("click", () => {
+    colorPincel = context.strokeStyle = colorGoma;
     console.log("hice click en un color")        
 });   
 
