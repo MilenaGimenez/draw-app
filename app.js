@@ -11,6 +11,9 @@ const yellow = document.getElementById("yellow");
 let initialX;
 let initialY;
 
+//Botón de descarga
+const btnDescarga = document.getElementById("btn-descargar");
+
 
 let colorPincel = context.strokeStyle = "#000";
 let colorRojo = "#ff0000";
@@ -91,9 +94,11 @@ mainCanvas.addEventListener('mouseup', mouseUp); //Asociando función de dejar d
 const descargarImg = () => {
     // let imagen = mainCanvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
     // window.location.href = imagen;
-
+    
     flor = document.createElement('a');
     flor.download = "Sin título";
     flor.href = mainCanvas.toDataURL("image/png");
     flor.click();
 };
+
+btnDescarga.addEventListener("click", () => { descargarImg() });
