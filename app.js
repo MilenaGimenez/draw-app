@@ -14,6 +14,9 @@ let initialY;
 //Botón de descarga
 const btnDescarga = document.getElementById("btn-descargar");
 
+//Colocar fondo blanco a Canvas
+context.fillStyle = "white";
+context.fillRect(0, 0, 800, 800);
 
 let colorPincel = context.strokeStyle = "#000";
 let colorRojo = "#ff0000";
@@ -97,7 +100,7 @@ const descargarImg = () => {
     
     flor = document.createElement('a');
     flor.download = "Sin título";
-    flor.href = mainCanvas.toDataURL("image/png");
+    flor.href = mainCanvas.toDataURL("image/jpeg");
     flor.click();
 };
 
